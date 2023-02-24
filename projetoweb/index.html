@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200&family=Signika:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de gorjetas</title>
+</head>
+<body>
+    <h6 class="h6">
+        O projeto é uma calculadora de gorjetas que ajuda a calcular o valor ideal de gorjeta. O usuário insere o valor total da conta, a porcentagem de satisfação desejada e o número de pessoas que irão pagar, e a calculadora faz o cálculo automaticamente.
+    </h6>
+    <div id="container">
+     <div>
+        <h1 class="title">Calculadora de gorjetas</h1>
+      </div>
+       <div>
+        <form class="tipsForm" id="tipsForm">
+            <label for="bill">
+                <p>Quanto ficou a conta?</p>
+            </label>
+            <p>
+                R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput" required>
+            </p>
+            <label for="servicequal">
+                <p>Como foi seu serviço?</p>
+            </label>
+            <p>
+                <select name="servicequal" id="servicequal"  class="formselect" required>
+                    <option disabled selected value="0">-- Escolha uma outra opção </option>
+                    <option value="0.3">30% - Incrivel</option>
+                    <option value="0.2">20% - Bom</option>
+                    <option value="0.15">15% - Aceitavel</option>
+                    <option value="0.1">10% - Ruim</option>
+                    <option value="0.05">05% - Péssimo</option> 
+                <select>
+            </p>
+            <label for="people">
+              <p>Quantas pessoas vão dividir a conta?</p>
+            <label>
+        <p>
+            <input type="number" placeholder="1" name="people" id="people"  class="formInput" required> pessoa(s)
+        </p>
+        <button type="submit" class="formSubmit">Calcular</button>
+        <h6 class="Daniel">Feito com ❤️ por Daniel Lira</h6>
+        <h6 class="Daniel">Contato: dnllira1@gmail.com</h6>
+      </form>
+      </div>
+      <div id="totalTip">
+        Gorjeta total:
+        R$<span id="tip">0.00</span>
+        <p id="each">cada</p>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
